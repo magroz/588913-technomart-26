@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
-* Студент: [Михаил](https://up.htmlacademy.ru/htmlcss/26/user/588913).
-* Наставник: `Неизвестно`.
+* Студент: [Михаил Грозов](https://up.htmlacademy.ru/htmlcss/26/user/588913).
+* Наставник: [Михаил Савотиков](https://htmlacademy.ru/profile/id98316).
 
 ---
 
