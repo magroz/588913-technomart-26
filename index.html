@@ -46,7 +46,7 @@
 			</nav>
 		</header>
 		<main>
-			<h1>Интернет-магазин Техномарт</h1>
+			<h1 class="visually-hidden">Интернет-магазин Техномарт</h1>
 			<section>
 				<h2>Компания "Техномарт"</h2>
 				<p>
@@ -68,8 +68,38 @@
 					Вы можете забрать товар сами,
 				 	заехав в наш офис:
 				</p>
-				 <a href="#"><img src="img/index/mini-map.png" alt="Наше месторасположение"></a>
+				 <a href="#"><img src="img/index/mini-map.png" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></a>
 				 <button type="button">Заблудились? Напишите нам!</button>
+			</section>
+			<section>
+				<h2 class="visually-hidden">Как до нас добраться</h2>
+				<img src="img/index/map.png" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+				<button type="button">
+					Закрыть
+				</button>
+			</section>
+			<section>
+				<h2 class="visually-hidden">Обратная связь</h2>
+				<form action="https://echo.htmlacademy.ru" method="post">
+					<div>
+						<label for="feedback_name">Ваше имя:</label>
+						<input type="text" id="feedback_name" placeholder="Имя Фамилия">
+					</div>
+					<div>
+						<label for="feedback_email">Ваше e-mail:</label>
+						<input type="email" id="feedback_email" placeholder="email@example.com">
+					</div>
+					<div>
+						<label for="feedback_letter">Текст письма:</label>
+						<textarea name="" id="feedback_letter" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+					</div>
+					<button type="submit">
+						Отправить
+					</button>
+					<button type="button">
+						Закрыть
+					</button>
+				</form>
 			</section>
 		</main>
 		<footer>
