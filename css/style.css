@@ -14,7 +14,15 @@ body {
 }
 a {	
 	text-decoration: none;
+	color: black;
 }
+ul {
+	list-style: none;
+}
+.visually-hidden {
+	display: none;
+}
+/*header*/
 .header-top {
 	font-size: 17px;
 	line-height: 18px;
@@ -23,11 +31,27 @@ a {
 	background-color: #293449;
 }
 .header-middle {
-	font-size: 17px;
-	line-height: 18px;
-	color: white;
+	font-size: 21px;
+	line-height: 21px;
+	color: black;
 
 	background-color: white;
+}
+.header-middle__text {
+	font-style: italic;
+	font-size: 16px;
+	line-height: 23px;
+	color: #EE3643;
+}
+.header-middle__phone {
+	font-size: 21px;
+	line-height: 21px;
+	color: #EE3643;
+}
+.header-middle__address {
+	font-size: 14px;
+	line-height: 24px;
+	color: #32425c;
 }
 .header-nav {
 	font-size: 17px;
@@ -36,3 +60,73 @@ a {
 
 	background-color: #32425c;
 }
+.header-top a,
+.header-nav a {
+	color: white;
+}
+.header-top a:hover,
+.header-top a:focus,
+.header-nav a:hover,
+.header-nav a:focus {
+	color: yellow;
+}
+.header-middle button {
+	background-color: white;
+}
+/*header end*/
+
+/*main*/
+.company h2,
+.contacts h2 {
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+.company p,
+.contacts p {
+	font-family: 'PT Sans', sans-serif; 
+	font-size: 13px;
+	line-height: 24px;
+}
+.company li {
+	font-size: 18px;
+	line-height: 19px;
+}
+.company a,
+.contacts button {
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+	color: white;
+
+	background-color: #ee3643;
+}
+/*main end*/
+
+/*footer*/
+.footer-top {
+	font-size: 18px;
+	line-height: 24px;
+
+	background-color: #293449;
+}
+.footer-top p {
+	color: #F3F7F9;
+}
+.footer-top__nav-website a {
+	color: white;
+} 
+.footer-top__nav-goods a {
+	color: #FFD180;
+} 
+.footer-bottom {
+	font-size: 16px;
+	line-height: 18px;
+	color: white;
+
+	background-color: #003366;
+}
+.footer-bottom_yellow {
+	color: #FFD180;
+}
+/*footer end*/

@@ -10,7 +10,8 @@
 		<header>
 			<div class="header-top">
 				<a href="#"><img src="img/common/logo.jpg" alt="Логотип интернет-магазина Техномарт"></a>
-				<input type="search" name="field-search">
+				<label for="field-search">Поиск:</label>
+        		<input type="search" name="field-search" id="field-search">
 				<ul>
 					<li><a href="#">Закладки:0</a></li>
 					<li><a href="#">Корзина:0</a></li>
@@ -18,12 +19,12 @@
 				</ul>
 			</div>
 			<div class="header-middle">
-				<p>
+				<p class="header-middle__text">
 					Интернет-магазин строительных материалов и инструментов для ремонта
 				</p>
 				<div>
-					<span>+7 (812) 555-05-55</span>
-					<span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+					<span class="header-middle__phone">+7 (812) 555-05-55</span>
+					<span class="header-middle__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
 				</div>
 				<ul>
 					<li>
@@ -47,7 +48,7 @@
 		</header>
 		<main>
 			<h1 class="visually-hidden">Интернет-магазин Техномарт</h1>
-			<section>
+			<section class="company">
 				<h2>Компания "Техномарт"</h2>
 				<p>
 					Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушным любителей сэкономить на гастрабайтерах.
@@ -62,7 +63,7 @@
 				</ul>
 				<a href="#">Подробнее о компании</a>
 			</section>
-			<section>
+			<section class="contacts">
 				<h2>Контакты</h2>
 				<p>
 					Вы можете забрать товар сами,
@@ -71,12 +72,12 @@
 				 <a href="#"><img src="img/index/mini-map.png" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></a>
 				 <button type="button">Заблудились? Напишите нам!</button>
 			</section>
-			<section>
+			<section class="visually-hidden">
 				<h2 class="visually-hidden">Как до нас добраться</h2>
 				<img src="img/index/map.png" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
 				<button type="button"><span class="visually-hidden">Закрыть</span></button>
 			</section>
-			<section>
+			<section class="visually-hidden">
 				<h2 class="visually-hidden">Обратная связь</h2>
 				<form action="https://echo.htmlacademy.ru" method="post">
 					<div>
@@ -97,27 +98,31 @@
 			</section>
 		</main>
 		<footer>
-			<a href="#">
-				Техномарт
-			</a>
-			<ul>
-				<li><a href="#">Компания</a></li>
-				<li><a href="#">Новости</a></li>
-				<li><a href="catalog.html">Каталог</a></li>
-				<li><a href="#">Доставка</a></li>
-				<li><a href="#">Контакты</a></li>
-			</ul>
-			<p>
-				г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-				+7 (812) 555-05-55
-			</p>
-			<ul>
-				<li><a href="#">Материалы</a></li>
-				<li><a href="#">Техника</a></li>
-				<li><a href="#">Инструмент</a></li>
-				<li><a href="#">Спецпредложения</a></li>
-			</ul>
-			<div>
+			<div class="footer-top">
+				<div class="footer-top__nav-website">
+					<a href="#"><img src="img/common/logo.jpg" alt="Логотип интернет-магазина Техномарт"></a>
+					<ul>
+						<li><a href="#">Компания</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="catalog.html">Каталог</a></li>
+						<li><a href="#">Доставка</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="footer-top__nav-goods">
+					<p>
+						г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+						+7 (812) 555-05-55
+					</p>
+					<ul>
+						<li><a href="#">Материалы</a></li>
+						<li><a href="#">Техника</a></li>
+						<li><a href="#">Инструмент</a></li>
+						<li><a href="#">Спецпредложения</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-bottom">
 				<p>
 					&copy; 2010-2017 Компания &laquo;Техномарт&raquo;
 					Все права защищены
@@ -129,11 +134,11 @@
         		</ul>
         		<p>
         			Обратная связь: 
-        			<a href="https://mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        			<a href="https://mail@htmlacademy.ru" class="footer-bottom_yellow">mail@htmlacademy.ru</a>
       			</p>
 				<p>
         			Разработано &ndash;
-        			<a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+        			<a href="https://htmlacademy.ru/intensive/htmlcss" class="footer-bottom_yellow">htmlacademy.ru</a>
       			</p>
 			</div>
 		</footer>
