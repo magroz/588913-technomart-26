@@ -8,15 +8,17 @@
 	</head>
 	<body>
 		<header>
-			<div class="header-top">
-				<a href="#" class="logo"></a>
-				<label for="field-search">Поиск:</label>
-        		<input type="search" name="field-search" id="field-search">
-				<ul>
-					<li><a href="#">Закладки:0</a></li>
-					<li><a href="#">Корзина:0</a></li>
-					<li><a href="#" class="order">Оформить заказ</a></li>
-				</ul>
+			<div class="header-top-wrapper">
+				<div class="header-top">
+					<a href="#" class="logo"></a>
+					<label for="field-search">Поиск:</label>
+	        		<input type="search" name="field-search" id="field-search">
+					<ul class="header-top__nav-list">
+						<li><a href="#">Закладки: 0</a></li>
+						<li><a href="#">Корзина: 0</a></li>
+						<li><a href="#" class="order">Оформить заказ</a></li>
+					</ul>
+				</div>
 			</div>
 			<div class="header-middle">
 				<p class="header-middle__text">
@@ -34,7 +36,7 @@
 				</ul>
 			</div>
 			<nav class="header-nav">
-				<ul>
+				<ul class="header-nav-list">
 					<li><a href="index.html">Главная</a></li>
 					<li><a href="#">Компания</a></li>
 					<li><a href="catalog.html">Каталог</a></li>
