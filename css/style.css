@@ -25,6 +25,9 @@ ul {
 .visually-hidden {
 	display: none;
 }
+.popap {
+	display: none;
+}
 /*header*/
 header {
 	background-color: silver;
@@ -58,10 +61,12 @@ header {
 	padding: 0;
 }
 .header-top__nav-list a {
+	display: block;
 	width: 150px;
 	height: 42px;
 	padding: 11px 20px 12px;
 	margin: 0;
+	vertical-align: middle;
 	box-sizing: border-box;
 }
 .header-top a:hover,
@@ -100,6 +105,12 @@ a.logo:focus {
 a.logo:active {
 	background-image: url("../img/common/logo-active.jpg");
 }
+header .container {
+	display: flex;
+	flex-direction: column;
+	width: 940px;
+	margin: 0 auto;
+}
 .header-middle {
 	font-size: 21px;
 	line-height: 21px;
@@ -108,12 +119,20 @@ a.logo:active {
 	/*background-color: #f1f5f7;*/
 
 	display: flex;
+	align-items: center;
+	padding: 30px 0;
 }
 .header-middle__text {
 	font-style: italic;
 	font-size: 16px;
 	line-height: 23px;
 	color: #EE3643;
+	width: 226px;
+	margin-left: 70px;
+}
+.header-middle__contacts {
+	width: 270px;
+	margin-left: 42px;
 }
 .header-middle__phone {
 	font-size: 21px;
@@ -124,9 +143,26 @@ a.logo:active {
 	font-size: 14px;
 	line-height: 24px;
 	color: #32425c;
+	display: flex;
+	flex-direction: column;
+}
+.header-middle__user-nav {
+	width: 281px;
+	margin-left: auto;
+	display: flex;
 }
 .header-middle button {
 	background-color: white;
+	height: 45px;
+	border: none;
+	padding: 0;
+}
+.log-in {
+	width: 121px;
+}
+.registration {
+	width: 150px;
+	margin-left: 10px;
 }
 .header-middle button:hover,
 .header-middle button:focus {
@@ -156,19 +192,27 @@ a.logo:active {
 	font-size: 17px;
 	line-height: 17px;
 	color: white;
+	margin: 0;
+	padding: 0 50px;
 
 	background-color: #32425c;
 	box-shadow: inset 0 -5px 0 #293449;
 
-	display: flex;
 	height: 60px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	
 }
 .header-top a,
 .header-nav a {
 	color: white;
 }
 .header-nav a {
+	display: block;
 	color: white;
+	padding: 22px 20px 20px; 
 }
 .header-nav a:hover,
 .header-nav a:focus {
@@ -183,8 +227,26 @@ a.logo:active {
 /*header end*/
 
 /*main*/
+.company-contacts.container {
+	display: flex;
+	justify-content: space-between;
+	width: 940px;
+	margin: 79px auto 86px;
+}
+.company {
+	width: 500px;
+	margin: 0;
+	padding: 0;
+}
+.contacts {
+	width: 300px;
+	margin: 0;
+	padding: 0;
+}
 .company h2,
 .contacts h2 {
+	margin: 0;
+	padding: 0;
 	font-size: 30px;
 	line-height: 30px;
 	text-transform: uppercase;
@@ -310,20 +372,48 @@ a.logo:active {
 /*main end*/
 
 /*footer*/
+footer .container {
+	display: flex;
+	width: 940px;
+	margin: 0 auto;
+}
+.footer-top .container {
+	flex-direction: column;
+}
 .footer-top {
 	font-size: 18px;
 	line-height: 24px;
 
 	background-color: #32425c;
 }
+
 .footer-top p {
 	color: #F3F7F9;
+}
+.footer-top__nav-website,
+.footer-top__nav-goods {
+	display: flex;
+	justify-content: space-between;
+}
+.footer-site-nav-list,
+.footer-nav-goods-list {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	margin-left: 55px;
+}
+.footer-site-nav-list a,
+.footer-nav-goods-list a {
+	margin-left: 55px;
 }
 .footer-top__nav-website a {
 	color: white;
 }
 .footer-top__nav-goods a {
 	color: #FFD180;
+}
+.footer-top__nav-goods p {
+	width: 325px;
 }
 .footer-top__nav-website a:hover,
 .footer-top__nav-website a:focus,
