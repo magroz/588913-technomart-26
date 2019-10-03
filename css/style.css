@@ -433,6 +433,18 @@ footer .container {
 
 	background-color: #293449;
 }
+.footer-bottom .container {
+	display: flex;
+	justify-content: space-between;
+}
+.footer-bottom__copyright {
+	width: 230px;
+}
+.footer-bottom__social-networks-list {
+	width: 150px;
+	margin-left: 150px;
+	padding: 0;
+}
 .footer-bottom_yellow {
 	color: #FFD180;
 }
