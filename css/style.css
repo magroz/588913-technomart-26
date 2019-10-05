@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap&subset=cyrillic');
 /*font-family: 'PT Sans', sans-serif;
 font-family: 'Cuprum', sans-serif;*/
-html {
+* {
 	box-sizing: border-box;
 }
 body {
@@ -30,7 +30,8 @@ ul {
 }
 /*header*/
 header {
-	background-color: silver;
+	/*background-color: silver;*/
+	background-color: #f1f5f7;
 	width: 100%;
 	height: 320px;
 }
@@ -116,23 +117,28 @@ header .container {
 	line-height: 21px;
 	color: black;
 
-	/*background-color: #f1f5f7;*/
-
 	display: flex;
-	align-items: center;
-	padding: 30px 0;
+	align-items: flex-start;
+	margin: 0;
+	padding: 47px 0;
 }
 .header-middle__text {
 	font-style: italic;
 	font-size: 16px;
 	line-height: 23px;
 	color: #EE3643;
-	width: 226px;
-	margin-left: 70px;
+	width: 200px;
+	margin: 0;
+	margin-left: 52px;
 }
 .header-middle__contacts {
+	display: flex;
+	flex-direction: column;
+
 	width: 270px;
+	margin: 0;
 	margin-left: 42px;
+	padding: 0;
 }
 .header-middle__phone {
 	font-size: 21px;
@@ -143,13 +149,14 @@ header .container {
 	font-size: 14px;
 	line-height: 24px;
 	color: #32425c;
-	display: flex;
-	flex-direction: column;
+
 }
 .header-middle__user-nav {
-	width: 281px;
-	margin-left: auto;
 	display: flex;
+	width: 281px;
+	margin: 0;
+	margin-left: auto;
+	padding: 0;
 }
 .header-middle button {
 	background-color: white;
@@ -171,14 +178,33 @@ header .container {
 .header-middle button:active {
 	opacity: 0.3;
 }
+.person-wrapper {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	margin-left: auto;
+}
 .header-middle__person {
 	background-color: white;
+	width: 300px;
+}
+.header-middle__person-info {
+	display: flex;
+	margin: 0;
+	padding: 0;
 }
 .header-middle__person-info a {
 	font-size: 16px;
 	line-height: 18px;
-  	color: #32425C;
-  	text-decoration: underline;
+  color: #32425C;
+  text-decoration: underline;
+}
+.header-middle__person-info li {
+	margin: 0;
+	padding: 0;
+}
+.header-middle__person-info li:last-child {
+	padding-left:20px;
 }
 .header-middle__person-info a:hover,
 .header-middle__person-info a:focus {
@@ -271,25 +297,56 @@ header .container {
 	background-color: #ee3643;
 }
 /*catalog*/
+.catalog.container {
+	/*display: flex;*/
+	width: 940px;
+	margin: 0 auto;
+}
 .breadcrumbs {
 	font-family: 'PT Sans', sans-serif;
 	font-size: 13px;
 	line-height: 18px;
 	text-transform: uppercase;
 	color: #000000;
+
+	margin: 0;
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+	padding: 0;
+	display: flex;
 }
-.catalog h1 {
+.breadcrumbs li {
+	margin: 0;
+	padding: 0;
+	padding-left: 20px;
+}
+.breadcrumbs a {
+	margin: 0;
+	padding: 0;
+}
+.catalog .page-title {
 	font-size: 30px;
 	line-height: 30px;
 	text-transform: uppercase;
 	color: #32425c;
 	background-color: #f2f6f8;
+
+	margin: 0;
+	padding: 30px 33px;
+
+}
+.catalog-columns {
+	display: flex;
+	justify-content: space-between;
 }
 .filters {
 	font-family: 'PT Sans', sans-serif;
 	font-size: 15px;
 	line-height: 20px;
 	text-transform: uppercase;
+
+	width: 220px;
 }
 .filters legend {
 	font-size: 17px;
@@ -306,9 +363,25 @@ header .container {
 .catalog-section {
 	font-family: 'PT Sans', sans-serif;
 	font-weight: bold;
+
+	width: 700px;
+}
+.catalog-list {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 .catalog-item {
 	border: solid 1px #e5e5e5;
+
+	width: 220px;
+	margin-bottom: 20px;
+	margin-right: 20px;
+}
+.catalog-item:nth-child(3n) {
+	margin-right: 0;
 }
 .catalog-item:hover,
 .catalog-item:focus{
@@ -369,6 +442,10 @@ header .container {
 	border: 3px solid #32425C;
 	opacity: 0.3;
 }
+
+
+
+/*catalog end*/
 /*main end*/
 
 /*footer*/
@@ -401,6 +478,9 @@ footer .container {
 	justify-content: space-between;
 	align-items: flex-end;
 	margin-left: 55px;
+}
+.footer-nav-goods-list {
+	align-items: flex-start;
 }
 .footer-site-nav-list a,
 .footer-nav-goods-list a {
@@ -441,9 +521,17 @@ footer .container {
 	width: 230px;
 }
 .footer-bottom__social-networks-list {
-	width: 150px;
-	margin-left: 150px;
+	width: 134px;
+	margin-left: 160px;
 	padding: 0;
+}
+.footer-bottom__feedback {
+	margin-left: 117px;
+	width: 140px;
+}
+.footer-bottom__developer {
+	margin-left: auto;
+	width: 96px;
 }
 .footer-bottom_yellow {
 	color: #FFD180;
